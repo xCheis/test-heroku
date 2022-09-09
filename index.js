@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
 
 app.get('/test', async function(req, res) {
 
-    res.json(req.header);
+    res.json(req.headers);
 
 
 });
