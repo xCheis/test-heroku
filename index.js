@@ -21,7 +21,11 @@ app.get('/', (req, res) => {
 
 app.get('/test', async function(req, res) {
 
-    res.json(req.headers);
+    if(req.headers.test){
+        res.json({status:true});
+        return
+    } 
+    res.json({status:false});
 
 
 });
