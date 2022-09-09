@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
 
 
 
-app.post('/cncatalogos', async function(req, res) {
+app.get('/test', async function(req, res) {
 
     res.json(req.header);
 
